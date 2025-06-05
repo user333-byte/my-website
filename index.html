@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Резюме — Андрій Попадинець</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="theme-toggle">Змінити тему</button>
+    <div class="container">
+        <h1 id="main-title" style="font-size: 36px; text-align: center;">Андрій Попадинець</h1>
+
+        <!-- Контактна інформація -->
+        <div class="section">
+            <table border="1">
+                <tr><td><strong>Email:</strong></td><td>Andrii.Popadynets@gmail.com</td></tr>
+                <tr><td><strong>Телефон:</strong></td><td>+380-68-529-5103</td></tr>
+                <tr><td><strong>Місто:</strong></td><td>Львів, Україна</td></tr>
+                <tr><td><strong>Дата народження:</strong></td><td>17 березня 2005</td></tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Про себе</h2>
+            <p>Студент 3 курсу... (текст про себе)</p>
+        </div>
+
+        <div class="section">
+            <h2>Освіта</h2>
+            <table border="1">
+                <tr><th>Навчальний заклад</th><th>Спеціальність</th><th>Період</th></tr>
+                <tr><td>НУ "Львівська політехніка"</td><td>Кібербезпека</td><td>2022 – дотепер</td></tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Досвід роботи</h2>
+            <table border="1">
+                <tr><th>Місце</th><th>Період</th><th>Обов'язки</th></tr>
+                <tr><td>Телекомпанія "Діалект"</td><td>10.03.2024 – 11.04.2024</td><td>HTML, структура сайтів</td></tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Навички</h2>
+            <div class="skills">
+                <div class="skill">HTML</div>
+                <div class="skill">SQL</div>
+                <div class="skill">TCP/IP</div>
+                <div class="skill">Linux</div>
+                <div class="skill">GPG</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Мови</h2>
+            <table border="1" width="50%">
+                <tr><th>Мова</th><th>Рівень</th></tr>
+                <tr><td>Українська</td><td>Рідна</td></tr>
+                <tr><td>Англійська</td><td>B1</td></tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Відгуки роботодавців</h2>
+            <div id="comments"></div>
+        </div>
+    </div>
+
+    <footer id="local-storage-data"></footer>
+
+    <div id="modal" class="modal hidden">
+        <form action="https://formspree.io/f/movdzwgw" method="POST">
+            <button type="button" id="close-modal">×</button>
+            <input type="text" name="name" placeholder="Ім’я" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Номер телефону" required>
+            <textarea name="message" placeholder="Ваше повідомлення" required></textarea>
+            <button type="submit">Відправити</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
